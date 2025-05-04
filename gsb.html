@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSB - Mission1 - Projet “Catalogue”</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Google Fonts + Bootstrap 5 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    header, footer {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem 0;
+    }
+    .hero {
+      background: linear-gradient(to right, #1e1e2f, #2c3e50);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-title {
+      font-weight: 600;
+    }
+    footer p {
+      margin: 0;
+    }
+    .content-section {
+      padding: 3rem 0;
+    }
+    .steps {
+      margin-top: 3rem;
+    }
+    .steps ul {
+      list-style-type: none;
+    }
+    .steps ul li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Mon Portfolio - Adam ALPHONSO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#veille">Veille</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#e6">Épreuve E6</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="container">
+    <h1>Projet numéro 1 : GSB</h1>
+    <p class="lead">Développement d'une infrastructure web pour gérer le catalogue de médicaments d'une entreprise de santé.</p>
+  </div>
+</header>
+
+<!-- Objectifs du Projet -->
+<section class="content-section">
+  <div class="container">
+    <h2 class="section-title">Objectifs du Projet</h2>
+    <p>
+      Le projet “Catalogue” vise à créer une solution complète de gestion d’un catalogue de médicaments pour le groupe GSB (Gestion des Services Bancaires).
+      Cette solution inclut la mise en place d'une infrastructure web robuste et sécurisée, permettant de gérer le catalogue, d’enregistrer de nouveaux médicaments, et de permettre la recherche et la mise à jour des informations.
+    </p>
+  </div>
+</section>
+
+<!-- Étapes du Projet -->
+<section class="content-section bg-light steps">
+  <div class="container">
+    <h2 class="section-title">Les Étapes du Projet</h2>
+    <ul>
+      <li><strong>Étape 1 :</strong> Installation du serveur web (Apache) et de la base de données (MariaDB).</li>
+      <li><strong>Étape 2 :</strong> Création de la base de données et des tables nécessaires pour stocker les informations des médicaments.</li>
+      <li><strong>Étape 3 :</strong> Développement d'une interface web pour l'ajout, la modification et la suppression des médicaments.</li>
+      <li><strong>Étape 4 :</strong> Mise en place de scripts pour automatiser les sauvegardes régulières des données du catalogue.</li>
+      <li><strong>Étape 5 :</strong> Intégration d’un système de gestion des droits d’accès pour assurer la sécurité des données.</li>
+      <li><strong>Étape 6 :</strong> Tests de performance, validation et déploiement final de l'infrastructure web.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Étapes du Projet -->
+<section class="content-section bg-light steps">
+  <div class="container">
+    <h2 class="section-title">Compétences techniques développées</h2>
+    <ul>
+      <li><strong>Mise en place d’un serveur web (Apache) :</strong> Tu as appris à configurer un environnement serveur, compétence clé pour tout développeur ou administrateur.</li>
+      <li><strong>Automatisation et scripts de sauvegarde :</strong> Tu as mis en œuvre des tâches automatisées, ce qui est crucial pour la fiabilité et la maintenance des systèmes.</li>
+      <li><strong>Autonomie et prise d’initiative :</strong> Tu as mené le projet de bout en bout, en autonomie, en faisant des choix techniques adaptés.</li>
+      <li><strong>Gestion de projet :</strong> Tu as suivi une démarche structurée (analyse, conception, implémentation, tests).</li>
+      <li><strong>Documentation et traçabilité :</strong> Tu as produit une documentation claire, essentielle pour la transmission et la maintenance du projet.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Adam Alphonso. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

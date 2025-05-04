@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Situations</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Google Fonts + Bootstrap 5 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    header, footer {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem 0;
+    }
+    .hero {
+      background: linear-gradient(to right, #1e1e2f, #2c3e50);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-title {
+      font-weight: 600;
+    }
+    footer p {
+      margin: 0;
+    }
+    .content-section {
+      padding: 3rem 0;
+    }
+    .steps {
+      margin-top: 3rem;
+    }
+    .steps ul {
+      list-style-type: none;
+    }
+    .steps ul li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Mon Portfolio - Adam ALPHONSO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#veille">Veille</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#e6">Épreuve E6</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="container">
+    <h1>Situations : Épreuves E6</h1>
+    <p class="lead">Développement d'une infrastructure web pour gérer le catalogue de médicaments d'une entreprise de santé.</p>
+  </div>
+</header>
+
+<!-- Objectifs du Projet -->
+<section class="content-section">
+  <div class="container">
+    <h2 class="section-title">Situation 1 : Communication sécurisée entre une agence et son siège à l’aide du VPN WireGuard</h2>
+    <p>
+      Le secteur administratif de GSB, situé à Paris, a sollicité notre intervention pour établir un accès sécurisé à distance vers un site basé à Dijon. Pour répondre à ce besoin, nous avons opté pour l’utilisation du protocole VPN WireGuard, qui permet de créer un tunnel chiffré entre deux points distants. Ce choix garantit à la fois l’authenticité et la confidentialité des échanges entre les deux sites. L’objectif principal du projet est donc d’assurer une communication fiable et sécurisée grâce à ce tunnel, notamment pour permettre un accès SSH unidirectionnel du serveur principal vers le serveur distant. Techniquement, la mise en œuvre du projet repose sur plusieurs éléments : l’établissement du lien WireGuard entre les routeurs r-vp1 et r-vp2, la configuration d’un accès SSH unidirectionnel de s-infra vers s-agence, ainsi que la démonstration du chiffrement des données entre les deux points. WireGuard, en plus de sa simplicité de configuration, est reconnu pour ses performances et sa rapidité, ce qui en fait une solution privilégiée, même par de grands fournisseurs de VPN comme NordVPN ou CyberGhost. La réalisation du projet inclut également l’assignation d’une adresse IP statique pour s-agence et l’automatisation de plusieurs étapes via des playbooks Ansible.
+    </p>
+  </div>
+</section>
+
+<!-- Étapes du Projet -->
+<section class="content-section bg-light steps">
+  <div class="container">
+    <h2 class="section-title">Situation 2 : Mise en place d'un Bastion Guacamole pour sécurisé l'accès aux ressources internes</h2>
+    <p>
+	  Le secteur administratif de GSB nous a sollicités pour déployer une solution d’accès sécurisé aux ressources internes depuis une zone potentiellement non sécurisée (DMZ). L’objectif principal est d’installer un bastion Guacamole, permettant aux techniciens d’administrer à distance un serveur Windows via RDP et un serveur Linux via SSH, le tout de manière sécurisée depuis un simple navigateur. Ce projet vise à garantir une séparation stricte entre Internet et le réseau interne, notamment grâce à la configuration d’un pare-feu pfSense utilisant le NAT. Sur le plan technique, la solution repose sur plusieurs composants clés : le déploiement de Guacamole dans un conteneur via Podman, l’ajout d’un reverse proxy Nginx également conteneurisé, et la gestion fine des utilisateurs. Les machines cibles (s-win et s-infra) ont été configurées pour permettre respectivement un accès via RDP et SSH. Enfin, le bastion permet de centraliser les connexions et de fournir des preuves de journalisation, garantissant une traçabilité des accès. Guacamole, en tant que solution open-source, s’impose ici comme un outil simple, efficace et sécurisé pour administrer une infrastructure à distance.
+	</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Adam Alphonso. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

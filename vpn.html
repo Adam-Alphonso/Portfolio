@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDIS29 - AP3 - Projet VPN</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Google Fonts + Bootstrap 5 -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    header, footer {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem 0;
+    }
+    .hero {
+      background: linear-gradient(to right, #1e1e2f, #2c3e50);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card-title {
+      font-weight: 600;
+    }
+    footer p {
+      margin: 0;
+    }
+    .content-section {
+      padding: 3rem 0;
+    }
+    .steps {
+      margin-top: 3rem;
+    }
+    .steps ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .steps ul li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Mon Portfolio - Adam ALPHONSO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#veille">Veille</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#e6">Épreuve E6</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="container">
+    <h1>Projet numéro 2 : SDIS29 - AP3</h1>
+    <p class="lead">Mise en place d’une infrastructure virtuelle sécurisée pour une application d’alerte destinée aux pompiers volontaires.</p>
+  </div>
+</header>
+
+<!-- Objectifs du Projet -->
+<section class="content-section">
+  <div class="container">
+    <h2 class="section-title">Objectifs du Projet</h2>
+    <p>
+      Le projet a pour objectif de concevoir et sécuriser une infrastructure réseau complète afin de garantir la disponibilité, la confidentialité et la fiabilité de l’application d’alerte utilisée par les pompiers volontaires du SDIS29.
+	<a href="https://gitea.lyc-lecastel.fr/uap32-2025-r/sdis29-2" target="_blank">Accéder au dépôt du projet</a>
+    </p>
+  </div>
+</section>
+
+<!-- Étapes du Projet -->
+<section class="content-section bg-light steps">
+  <div class="container">
+    <h2 class="section-title">Les Étapes du Projet</h2>
+    <ul>
+      <li><strong>Étape 1 :</strong> Création d'une infrastructure virtuelle (via Proxmox) pour les services applicatifs, base de données et autres composants.</li>
+      <li><strong>Étape 2 :</strong> Installation et configuration de Tomcat10, MariaDB, PhpMyAdmin et Gitea sur Debian 12.</li>
+      <li><strong>Étape 3 :</strong> Mise en place d’un VPN site-à-site avec WireGuard pour sécuriser les échanges réseau entre le client et le SDIS29.</li>
+      <li><strong>Étape 4 :</strong> Centralisation des logs avec rsyslog et supervision complète via Zabbix.</li>
+      <li><strong>Étape 5 :</strong> Automatisation de la configuration et des sauvegardes avec Ansible.</li>
+      <li><strong>Étape 6 :</strong> Tests de sécurité, documentation et présentation du projet finalisé.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Étapes du Projet -->
+<section class="content-section bg-light steps">
+  <div class="container">
+    <h2 class="section-title">Compétences techniques développées</h2>
+    <ul>
+      <li><strong>Mise en place d’un serveur web (Apache) :</strong> Tu as appris à configurer un environnement serveur, compétence clé pour tout développeur ou administrateur.</li>
+      <li><strong>Automatisation et scripts de sauvegarde :</strong> Tu as mis en œuvre des tâches automatisées, ce qui est crucial pour la fiabilité et la maintenance des systèmes.</li>
+      <li><strong>Autonomie et prise d’initiative :</strong> Tu as mené le projet de bout en bout, en autonomie, en faisant des choix techniques adaptés.</li>
+      <li><strong>Gestion de projet :</strong> Tu as suivi une démarche structurée (analyse, conception, implémentation, tests).</li>
+      <li><strong>Documentation et traçabilité :</strong> Tu as produit une documentation claire, essentielle pour la transmission et la maintenance du projet.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Adam Alphonso. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
